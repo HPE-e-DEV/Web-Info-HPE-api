@@ -61,11 +61,14 @@ pero si ocurrió algún error en la proceso retorna un status_code de 4XX (Entre
 ¿Qué es una API en Python?
 Las APIs son mecanismos que permiten a dos componentes de software comunicarse entre sí mediante un conjunto de definiciones 
 y protocolos. En el contexto de la programación, una API se utiliza para acceder a funciones y datos de una aplicación externa. 
-En Python, las APIs son una forma común de obtener y manipular datos desde servicios en línea, como servicios web, bases de datos y otros recursos externos.
+En Python, las APIs son una forma común de obtener
+y manipular datos desde servicios en línea, como servicios web, bases de datos y otros recursos externos.
+
 
 Un ejemplo común de una API sería la api del clima que te brinda información básica sobre el clima de cualquier ciudad o país,
 si necesitas realizar una aplicación que requiera información sobre el clima de cualquier parte del mundo,
 puedes hacer uso de esta API a través de protocolos HTTP para conseguir esa información y poder usarla directamente en tu aplicación.
+
 
 ¿Cómo consumir una API?
 A continuación veremos algunos ejemplos sobre cómo consumir una API en Python con la ayuda de la librería Requests de Python
@@ -83,8 +86,12 @@ response.url	Contiene la URL de la petición.
 response.headers	Proporciona los headers de la petición.
 response.cookies	Proporciona las cookies de la petición.
 response.encoding	Contiene la codificación de la petición, ejemplo: utf-8.
-response.json()	Guarda la información que viene desde la API, por ejemplo, en la API del clima, una lista de diccionarios con la información de las ciudades.
-Nota importante, las peticiones a la API de jsonplaceholder sólo simulan el comportamiento de una API real, no todas las peticiones son funcionales, por ejemplo, si hacer una petición de tipo POST la API de jsonplaceholder la información NO se guardará en los servidores de la API pero la API te responde con un mensaje que simula que si.
+response.json()	Guarda la información que viene desde la API, por ejemplo,
+en la API del clima, una lista de diccionarios con la información de las ciudades.
+Nota importante, las peticiones a la API de jsonplaceholder 
+sólo simulan el comportamiento de una API real, no todas las peticiones son funcionales, 
+por ejemplo, si hacer una petición de tipo POST la API de jsonplaceholder la información 
+NO se guardará en los servidores de la API pero la API te responde con un mensaje que simula que si.
 
 Ejemplo con la solicitud GET
 Las solicitudes de tipo GET se utilizan para traer información de un servidor.
@@ -201,4 +208,7 @@ normalmente las APIs retornan un mensaje que nos indica si el objeto se eliminó
 o no pero la API de jsonplaceholder no retorna un mensaje en particular solo retorna un status_code de 200.
 
 Conclusión
-Las APIs desempeñan un papel fundamental en la integración de aplicaciones y el intercambio de datos en el mundo del desarrollo de software. En Python la librería Requests nos permite interactuar con las APIs de una forma sencilla e intuitiva, en este artículo aprendimos como hacer uso de esta librería para hacer peticiones HTTP y así obtener, crear, actualizar o eliminar información en una API, ahora ya estás listo/a para consumir una API de forma correcta y hacer uso de sus funcionalidades en tus propias aplicaciones.
+Las APIs desempeñan un papel fundamental en la integración de aplicaciones y el intercambio de datos en el mundo del desarrollo de software.
+En Python la librería Requests nos permite interactuar con las APIs de una forma sencilla e intuitiva,
+en este Post aprendimos como hacer uso de esta librería para hacer peticiones HTTP y así obtener, crear, 
+actualizar o eliminar información en una API, ahora ya estás listo/a para consumir una API de forma correcta y hacer uso de sus funcionalidades en tus propias aplicaciones.
